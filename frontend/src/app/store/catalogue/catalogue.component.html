@@ -1,0 +1,36 @@
+<div class="content" role="main">
+  <h3 style="margin-bottom: 25px; font-weight: 600; text-align: center">
+    Catalogue des produits
+  </h3>
+  <div
+    style="
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: end;
+    "
+  >
+    <h4 style="width: 10%" for="titreFilter">Filtrer</h4>
+    <div style="width: 40%">
+      <input
+        class="form-control"
+        id="titreFilter"
+        type="text"
+        [ngModel]="titreFilter"
+        (ngModelChange)="onInputChangeTitre($event)"
+        placeholder="Nom"
+      />
+    </div>
+    <div style="width: 40%">
+      <input
+        class="form-control"
+        id="priceFilter"
+        type="number"
+        [ngModel]="priceFilter"
+        (ngModelChange)="onInputChangePrice($event)"
+        placeholder="Prix max"
+      />
+    </div>
+  </div>
+  <app-list-product></app-list-product>
+</div>

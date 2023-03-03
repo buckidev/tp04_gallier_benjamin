@@ -1,0 +1,42 @@
+<h3 style="margin-bottom: 25px; font-weight: 600; text-align: center">
+  Mon panier
+</h3>
+<div class="panel-body" style="margin: 5%; margin-top: 0">
+  <ul
+    class="list-group scrollbar-primary"
+    style="
+      margin-top: 3%;
+      overflow-y: auto;
+      max-height: 700px;
+      width: 100%;
+      overflow: auto;
+    "
+  >
+    <li class="list-group-item" *ngFor="let art of panier">
+      <div
+        style="
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 15px;
+        "
+      >
+        <div style="display: flex; flex-direction: row; align-items: center">
+          <span style="margin-right: 20px">{{ art.name }}</span>
+          <span
+            class="text-info"
+            style="cursor: pointer"
+            [routerLink]="['/client/store/article', art.name]"
+          >
+            En savoir plus
+          </span>
+        </div>
+        <p style="font-weight: bold; font-size: large">{{ art.price }}€</p>
+      </div>
+      <button class="btn bg-danger" (click)="deleteArt(art)">
+        Retirer du panier
+      </button>
+    </li>
+  </ul>
+</div>

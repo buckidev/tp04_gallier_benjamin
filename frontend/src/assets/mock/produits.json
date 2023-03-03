@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Pommes",
+    "price": 2.49,
+    "description": "Des pommes fraîches et juteuses, parfaites pour une collation saine ou pour la préparation de délicieuses tartes et compotes."
+  },
+  {
+    "name": "Oranges",
+    "price": 1.99,
+    "description": "Des oranges savoureuses et riches en vitamines, idéales pour préparer des jus frais ou pour une collation saine."
+  },
+  {
+    "name": "Bananes",
+    "price": 1.79,
+    "description": "Des bananes mûres et sucrées, parfaites pour une collation rapide ou pour ajouter une touche sucrée à vos smoothies et à vos céréales."
+  },
+  {
+    "name": "Salade",
+    "price": 3.99,
+    "description": "Un mélange de salades fraîches et croquantes, idéal pour préparer des salades saines et délicieuses pour vos repas."
+  },
+  {
+    "name": "Tomates",
+    "price": 2.49,
+    "description": "Des tomates rouges et juteuses, parfaites pour ajouter de la saveur et de la texture à vos plats préférés, des sandwichs aux pâtes."
+  },
+  {
+    "name": "Viande",
+    "price": 15.99,
+    "description": "De la viande fraîche et de qualité, provenant des meilleurs producteurs locaux, pour des plats copieux et savoureux."
+  },
+  {
+    "name": "Lait",
+    "price": 8.49,
+    "description": "Du lait frais et crémeux, parfait pour le petit déjeuner ou pour ajouter une touche de douceur à vos recettes préférées."
+  },
+  {
+    "name": "Oeuf",
+    "price": 5.49,
+    "description": "Des oeufs frais et riches en protéines, idéaux pour les petits déjeuners, les omelettes ou pour ajouter de la texture à vos plats préférés."
+  },
+  {
+    "name": "Poisson",
+    "price": 14.99,
+    "description": "Du poisson frais et savoureux, provenant de sources durables et pêché localement, pour des repas sains et délicieux."
+  },
+  {
+    "name": "Céréales",
+    "price": 3.99,
+    "description": "Des céréales savoureuses et croquantes, parfaites pour un petit déjeuner rapide ou pour ajouter de la texture à vos yaourts et smoothies."
+  }
+]

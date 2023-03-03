@@ -1,0 +1,14 @@
+[
+  {
+    "login": "bgallier",
+    "mdp": "bgallier",
+    "Nom": "Gallier",
+    "Prenom": "Benjamin"
+  },
+  {
+    "login": "sdev",
+    "mdp": "sdev",
+    "Nom": "Deveci",
+    "Prenom": "Serkan"
+  }
+]

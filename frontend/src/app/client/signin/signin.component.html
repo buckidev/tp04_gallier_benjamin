@@ -1,0 +1,46 @@
+<form
+  [formGroup]="FormIdentification"
+  (ngSubmit)="submit()"
+  style="text-align: center"
+>
+  <div
+    class="form-group"
+    style="display: flex; flex-direction: column; align-items: center"
+  >
+    <h3 style="margin-bottom: 25px; font-weight: 600; text-align: center">
+      Connexion
+    </h3>
+    <div class="col-md-4" style="text-align: left; margin-bottom: 10px">
+      <label for="Login">Identifiant</label>
+      <input
+        type="text"
+        formControlName="Login"
+        class="form-control"
+        id="Login"
+      />
+    </div>
+    <div class="col-md-4" style="text-align: left">
+      <label for="psw" style="text-align: left">Mot de passe</label>
+      <input
+        type="password"
+        formControlName="Password"
+        class="form-control"
+        id="psw"
+      />
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Se connecter</button>
+</form>
+<div
+  style="
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  "
+>
+  <span>Vous n'avez pas de compte ?</span>
+  <a class="nav-item nav-link" [routerLink]="['/client/signup']"
+    >Inscrivez-vous</a
+  >
+</div>

@@ -1,0 +1,129 @@
+<form [formGroup]="FormIdentification" (ngSubmit)="submit()">
+  <h3 style="margin-bottom: 25px; font-weight: 600; text-align: center">
+    Inscription
+  </h3>
+  <div class="form-group,row" style="display: flex">
+    <div class="col-md-2">
+      <label for="Civilité">Civilité</label>
+      <select
+        formControlName="Civilite"
+        class="form-control"
+        id="Civilité"
+        style="margin: auto"
+      >
+        <option>--</option>
+        <option>M.</option>
+        <option>Mme.</option>
+      </select>
+    </div>
+    <div class="col-md-5">
+      <label for="Name">Nom</label>
+      <input
+        type="text"
+        formControlName="name"
+        class="form-control"
+        id="Name"
+      />
+    </div>
+    <div class="col-md-5">
+      <label for="prenom">Prénom</label>
+      <input
+        type="text"
+        formControlName="prenom"
+        class="form-control"
+        id="prenom"
+      />
+    </div>
+  </div>
+  <div class="form-group" style="display: flex">
+    <div class="col-md-3">
+      <label for="pays">Pays</label>
+      <input
+        type="pays"
+        formControlName="pays"
+        class="form-control"
+        id="pays"
+      />
+    </div>
+    <div class="col-md-2">
+      <label for="CP">Code Postal</label>
+      <input type="number" formControlName="CP" class="form-control" id="CP" />
+    </div>
+    <div class="col-md-3">
+      <label for="Ville">Ville</label>
+      <input
+        type="text"
+        formControlName="Ville"
+        class="form-control"
+        id="Ville"
+      />
+    </div>
+    <div class="col-md-4">
+      <label for="Adresse">Adresse</label>
+      <input
+        type="text"
+        formControlName="adresse"
+        class="form-control"
+        id="Adresse"
+      />
+    </div>
+  </div>
+  <div class="form-group" style="display: flex">
+    <div class="col-md-6">
+      <label for="Telephone">Télephone</label>
+      <input
+        type="tel"
+        formControlName="Tel"
+        class="form-control"
+        id="Telephone"
+      />
+    </div>
+    <div class="col-md-6">
+      <label for="email">Adresse email</label>
+      <input
+        type="email"
+        formControlName="Email"
+        class="form-control"
+        id="email"
+      />
+    </div>
+  </div>
+  <div class="form-group" style="display: flex">
+    <div class="col-md-4">
+      <label for="Login">Identifiant</label>
+      <input
+        type="text"
+        formControlName="Login"
+        class="form-control"
+        id="Login"
+      />
+    </div>
+    <div class="col-md-4">
+      <label for="psw">Mot de passe</label>
+      <input
+        type="password"
+        formControlName="Password"
+        class="form-control"
+        id="psw"
+      />
+    </div>
+    <div class="col-md-4">
+      <label for="psw2">Confirmer le mot de passe</label>
+      <input
+        type="password"
+        formControlName="Password2"
+        class="form-control"
+        id="psw2"
+      />
+    </div>
+  </div>
+  <button type="submit" style="margin-left: 15px" class="btn btn-primary">
+    S'inscrire
+  </button>
+</form>
+<div *ngIf="Res != ''" style="margin: 15px">
+  <p>{{ Res }}</p>
+  <button type="button" (click)="clearA()" class="btn btn-secondary">
+    Supprimer
+  </button>
+</div>

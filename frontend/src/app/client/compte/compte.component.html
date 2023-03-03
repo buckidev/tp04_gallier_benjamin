@@ -1,0 +1,32 @@
+<div style="text-align: center">
+  <h3 style="margin-bottom: 25px; font-weight: 600">Mon compte</h3>
+  <div *ngIf="client.Nom == ''">
+    <p>Vous n'êtes pas connecté. Veuillez vous connecter ou créer un compte.</p>
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <button
+        class="btn bg-primary text-white"
+        style="margin-right: 10px"
+        [routerLink]="['/client/signin']"
+      >
+        Se connecter
+      </button>
+      <button
+        class="btn bg-primary text-white"
+        [routerLink]="['/client/signup']"
+      >
+        S'inscrire
+      </button>
+    </div>
+  </div>
+  <div *ngIf="client.Nom != ''">
+    <p><span style="font-weight: bold">Prénom:</span> {{ client.Nom }}</p>
+    <p><span style="font-weight: bold">Nom:</span> {{ client.Prenom }}</p>
+  </div>
+</div>

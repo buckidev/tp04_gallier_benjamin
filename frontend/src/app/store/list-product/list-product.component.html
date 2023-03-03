@@ -1,0 +1,39 @@
+<div class="panel-body">
+  <ul
+    class="list-group scrollbar-primary"
+    style="
+      margin-top: 3%;
+      overflow-y: auto;
+      max-height: 700px;
+      width: 100%;
+      overflow: auto;
+    "
+  >
+    <li class="list-group-item" *ngFor="let cata of articleDisplayed">
+      <div
+        style="
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 15px;
+        "
+      >
+        <div style="display: flex; flex-direction: row; align-items: center">
+          <span style="margin-right: 20px">{{ cata.name }}</span>
+          <span
+            class="text-info"
+            style="cursor: pointer"
+            [routerLink]="['/client/store/article', cata.name]"
+          >
+            En savoir plus
+          </span>
+        </div>
+        <p style="font-weight: bold; font-size: large">{{ cata.price }}€</p>
+      </div>
+      <button class="btn bg-success" (click)="addPanier(cata)">
+        Ajouter au Panier
+      </button>
+    </li>
+  </ul>
+</div>
